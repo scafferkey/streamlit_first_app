@@ -1,6 +1,8 @@
 import streamlit as st
 # import plotly.express as px
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 print('Hello World')
 
@@ -14,5 +16,7 @@ st.write(f'multiplying these two bad boys together gives us {a*b}')
 ab = pd.read_csv('https://raw.githubusercontent.com/jeaggo/tc3068/master/Superstore.csv')
 st.write(ab.head())
 
+sns.hisplot(ab['Quantity'])
+plt.show
 
 #%%
